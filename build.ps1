@@ -1,5 +1,4 @@
-﻿
-$DNU = "dnu"
+﻿$DNU = "dnu"
 $DNVM = "dnvm"
 
 # ensure the correct version

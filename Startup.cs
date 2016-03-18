@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using DIShowcase.Services;
 using DIShowcase.Interfaces;
+using DIShowcase.Middleware;
 
 namespace DIShowcase
 {
@@ -56,6 +57,9 @@ namespace DIShowcase
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
+
+            app.UseResponseMiddleware();
 
             app.UseIISPlatformHandler();
 
